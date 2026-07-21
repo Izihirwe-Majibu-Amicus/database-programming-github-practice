@@ -1,0 +1,10 @@
+Database Programming - Learning Reflection
+
+Completing this assignment helped me understand how version control works in modern software development.
+
+Key takeaways from my experience:
+1. Version Control Concepts: I learned how tracking changes with Git prevents accidental loss of code and allows me to review past updates using commands like 'git log'.
+2. Command Line Workflow: Staging files with 'git add', making distinct commits with clear messages, and pushing code to GitHub with 'git push' gives me full control over my code updates.
+3. Profile & Portfolio: Organizing my GitHub repositories allows me to showcase my academic projects and technical skills professionally.
+
+Overall, learning these basic Git commands makes managing database scripts and development projects much more organized.
