@@ -31,7 +31,10 @@ This repository contains assignments demonstrating advanced SQL programming conc
 **Course:** C11665 – DPR400210 Database Programming
 
 **Instructor:** Eric Maniraguha
-
+### 👥 Group Members
+1. **Izihirwe Majibu Amicus** – Registration No: `30848/2025` (GitHub: `@Izihirwe-Majibu-Amicus`)
+2. **Duhimbaze Seth** – Registration No: `32481/2025` (GitHub: `@duhimbaze-seth`)
+3. **Uwiduhaye Frank Raymond** – Registration No: `32122/2025` (GitHub: `@raymondfrankuwiduhaye-eng`)
 ---
 
 # 📖 Project Overview
