@@ -374,3 +374,128 @@ FROM Sales;
 ### 🖼️ Query Execution Proof
 
 > <img width="1050" height="237" alt="window_aggregate" src="https://github.com/user-attachments/assets/6995fc48-9d39-4ebf-8123-1fde904715c1" />
+
+---
+
+## 3. Navigation Functions (LAG & LEAD)
+
+### Business Value
+
+Evaluates transaction-to-transaction sales trends and revenue variance over chronological order dates.
+
+```sql
+SELECT
+    sale_id,
+    sale_date,
+    amount,
+
+    LAG(amount, 1, 0) OVER (
+        ORDER BY sale_date
+    ) AS prev_sale_amount,
+
+    LEAD(amount, 1, 0) OVER (
+        ORDER BY sale_date
+    ) AS next_sale_amount
+
+FROM Sales;
+```
+
+### 🖼️ Query Execution Proof
+
+> <img width="811" height="230" alt="image" src="https://github.com/user-attachments/assets/61659349-95d4-45b0-93a7-61965c8ae280" />
+
+
+---
+
+## 4. Distribution Functions (NTILE & CUME_DIST)
+
+### Business Value
+
+Segments transactions into financial quartiles and calculates exact cumulative distribution percentages.
+
+```sql
+SELECT
+    sale_id,
+    amount,
+
+    NTILE(4) OVER (
+        ORDER BY amount DESC
+    ) AS sale_quartile,
+
+    CUME_DIST() OVER (
+        ORDER BY amount DESC
+    ) AS cumulative_distribution
+
+FROM Sales;
+```
+
+### 🖼️ Query Execution Proof
+
+> <img width="731" height="225" alt="image" src="https://github.com/user-attachments/assets/8c7f7fc2-49a4-484a-9d02-4e1bf1b97168" />
+
+
+---
+
+# 📊 Business Analysis & Decision Insights
+
+## Descriptive Analysis
+
+- Total Revenue: **$13,175**
+- Total Orders: **7**
+- Laptop sales generated approximately **95%** of the overall revenue.
+- Accessories generated approximately **$675** in revenue.
+
+---
+
+## Diagnostic Analysis
+
+### Product Mix
+
+Premium laptops contribute significantly more revenue than accessories.
+
+### Sales Variation
+
+Window functions reveal transaction values ranging from:
+
+- **Highest:** **$6,000**
+- **Lowest:** **$125**
+
+---
+
+## Prescriptive Recommendations
+
+- Bundle accessories with premium laptops to increase average transaction value.
+- Diversify marketing toward mid-range products.
+- Reduce financial dependency on a single product category.
+
+---
+
+# 🎯 Conclusion
+
+This project demonstrates how advanced SQL techniques transform raw transactional data into meaningful business intelligence.
+
+Key concepts demonstrated include:
+
+- Common Table Expressions (CTEs)
+- Recursive Queries
+- SQL Window Functions
+- Analytical Reporting
+
+These techniques support better reporting, trend identification, and data-driven decision-making.
+
+---
+
+# 📚 References
+
+- Oracle Database SQL Language Reference
+- Oracle PL/SQL Documentation
+- UNILAK Database Programming Course Materials
+- Instructor: Eric Maniraguha
+
+---
+
+# 🎓 Academic Integrity Statement
+
+This project was completed independently by the group members in accordance with **UNILAK Academic Integrity Policy**.
+
+All SQL queries, schema design, business analysis, and documentation represent original work unless otherwise cited.
