@@ -122,7 +122,11 @@ CREATE TABLE Sales (
 
 # 📊 ER Diagram
 
-![ER Diagram](ER_diagram.svg)
+<img 
+  width="800"
+  alt="ER Diagram"
+  src="diagrams/ER_diagram.svg"
+/>
 
 The diagram shows the three entities and their relationships:
 
