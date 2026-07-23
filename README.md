@@ -125,7 +125,8 @@ CREATE TABLE Sales (
 
 # 📊 ER Diagram
 
-<img width="1408" height="768" alt="E-Commerce" src="https://github.com/user-attachments/assets/77b80873-fea7-4715-bc9d-2319b255127b" />
+<img width="1536" height="1024" alt="E-Commerce" src="https://github.com/user-attachments/assets/a5d7fc2d-644a-490f-a4f2-82bb030d867b" />
+
 
 
 The diagram shows the three entities and their relationships:
